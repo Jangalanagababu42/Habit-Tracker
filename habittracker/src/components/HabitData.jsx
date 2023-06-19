@@ -22,7 +22,14 @@ function HabitData({ activity }) {
     habitDispatch({ type: "ARCHIVE_TASK", payload: { task: activity } });
   };
   return (
-    <div>
+    <div
+      style={{
+        listStyle: "none",
+        boxShadow: "5px 10px 8px #888888",
+        display: "inline-block",
+        margin: "10px",
+      }}
+    >
       <li key={activity.id}>
         <h1
           onClick={() => {
